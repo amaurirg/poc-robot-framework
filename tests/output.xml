@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.6.7 on linux)" generated="20190118 10:37:50.320" rpa="false">
+<suite id="s1" name="Numbers" source="/home/amaurigionavi/Dropbox/Python/Robot_Framework/poc-robot-framework/tests/numbers.robot">
+<test id="s1-t1" name="Soma">
+<kw name="Soma de Numeros" library="sum">
+<tags>
+<tag>numeros</tag>
+</tags>
+<arguments>
+<arg>1</arg>
+<arg>100</arg>
+</arguments>
+<status status="PASS" starttime="20190118 10:37:50.406" endtime="20190118 10:37:50.406"></status>
+</kw>
+<tags>
+<tag>soma</tag>
+</tags>
+<status status="PASS" starttime="20190118 10:37:50.405" endtime="20190118 10:37:50.406" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Subtracao">
+<kw name="Subtração de Numeros" library="sum">
+<tags>
+<tag>numeros</tag>
+</tags>
+<arguments>
+<arg>100</arg>
+<arg>99</arg>
+</arguments>
+<status status="PASS" starttime="20190118 10:37:50.407" endtime="20190118 10:37:50.407"></status>
+</kw>
+<tags>
+<tag>subtracao</tag>
+</tags>
+<status status="PASS" starttime="20190118 10:37:50.407" endtime="20190118 10:37:50.408" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Multiplicacao">
+<kw name="Multiplicação de Numeros" library="sum">
+<tags>
+<tag>numeros</tag>
+</tags>
+<arguments>
+<arg>1</arg>
+<arg>100</arg>
+</arguments>
+<msg timestamp="20190118 10:37:50.409" level="FAIL">AssertionError</msg>
+<status status="FAIL" starttime="20190118 10:37:50.408" endtime="20190118 10:37:50.409"></status>
+</kw>
+<tags>
+<tag>multiplicacao</tag>
+</tags>
+<status status="FAIL" starttime="20190118 10:37:50.408" endtime="20190118 10:37:50.409" critical="yes">AssertionError</status>
+</test>
+<test id="s1-t4" name="Divisao">
+<kw name="Divisão de Numeros" library="sum">
+<tags>
+<tag>numeros</tag>
+</tags>
+<arguments>
+<arg>100</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20190118 10:37:50.410" endtime="20190118 10:37:50.410"></status>
+</kw>
+<tags>
+<tag>divisao</tag>
+</tags>
+<status status="PASS" starttime="20190118 10:37:50.410" endtime="20190118 10:37:50.411" critical="yes"></status>
+</test>
+<doc>Executando operações matemáticas</doc>
+<status status="FAIL" starttime="20190118 10:37:50.321" endtime="20190118 10:37:50.411"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1">Critical Tests</stat>
+<stat pass="3" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">divisao</stat>
+<stat pass="0" fail="1">multiplicacao</stat>
+<stat pass="1" fail="0">soma</stat>
+<stat pass="1" fail="0">subtracao</stat>
+</tag>
+<suite>
+<stat pass="3" fail="1" id="s1" name="Numbers">Numbers</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
